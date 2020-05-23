@@ -1,17 +1,16 @@
 [nitpick.styles]
 include = [
-    # "https://raw.githubusercontent.com/gjedlicska/python-styleguide/master/file-structure.toml"
-    "black-style.toml",
-    "coverage-style.toml",
-    "dependencies.toml",
-    "file-structure.toml",
-    "flake8-style.toml",
-    "isort-style.toml",
-    "mypy-style.toml",
-    "nitpick-style.toml",
-    "poetry-style.toml",
-    "pytest-style.toml",
-    "tox-settings.toml",
+    "https://raw.githubusercontent.com/gjedlicska/python-styleguide/master/black-style.toml",
+    "https://github.com/gjedlicska/python-styleguide/raw/master/coverage-style.toml",
+    "https://github.com/gjedlicska/python-styleguide/raw/master/dependencies.toml",
+    "https://github.com/gjedlicska/python-styleguide/raw/master/file-structure.toml",
+    "https://github.com/gjedlicska/python-styleguide/raw/master/flake8-style.toml",
+    "https://github.com/gjedlicska/python-styleguide/raw/master/isort-style.toml",
+    "https://github.com/gjedlicska/python-styleguide/raw/master/mypy-style.toml",
+    "https://github.com/gjedlicska/python-styleguide/raw/master/nitpick-style.toml",
+    "https://github.com/gjedlicska/python-styleguide/raw/master/poetry-style.toml",
+    "https://github.com/gjedlicska/python-styleguide/raw/master/pytest-style.toml",
+    "https://github.com/gjedlicska/python-styleguide/raw/master/tox-settings.toml",
 ]
 
 [nitpick]
