@@ -1,8 +1,8 @@
 [nitpick.styles]
 include = [
-  "flake8.toml",
-  "isort.toml",
-  "darglint.toml"
+#   "flake8.toml",
+#   "isort.toml",
+#   "darglint.toml"
 ]
 
 [nitpick]
@@ -15,7 +15,7 @@ build-backend = "poetry.masonry.api"
 
 
 ["pyproject.toml".tool.poetry.dependencies]
-python = "^3.6 || ^3.7 || ^3.8"
+python = "^3.6 || ^3.7 || ^3.99"
 
 
 
@@ -73,18 +73,20 @@ comma_separated_values = ["flake8.ignore", "flake8.extend-ignore"]
 
 
 ["setup.cfg".flake8]
-format = wemake
-exclude = .tox, tests/*, docs/*
+format="wemake"
+exclude = ".tox, tests/*, docs/*"
 show-source = true
-enable-extensions=G
+enable-extensions="G"
 max-line-length = 88
-extend-ignore = E203,
-                Q000,
-                WPS305, # discourage string format.
-                WPS306, # discourage empty class inheritance, this is not needed for py3
-                WPS412, # discourage __init__ with "logic" aka anything but docstring
-                WPS410  # discourage __all__ variable for packages
-                WPS348  # discourage line starting with '.'
+extend-ignore = """
+    E203,
+    Q000,
+    WPS305, # discourage string format.
+    WPS306, # discourage empty class inheritance, this is not needed for py3
+    WPS412, # discourage __init__ with "logic" aka anything but docstring
+    WPS410  # discourage __all__ variable for packages
+    WPS348  # discourage line starting with '.'
+"""
 
 
 
@@ -99,7 +101,7 @@ lines_between_types=1
 
 
 ["setup.cfg".mypy]
-plugins = returns.contrib.mypy.decorator_plugin, pydantic.mypy
+plugins = "returns.contrib.mypy.decorator_plugin, pydantic.mypy"
 allow_redefinition = false
 check_untyped_defs = true
 ignore_errors = false
