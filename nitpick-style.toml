@@ -1,0 +1,24 @@
+[nitpick.styles]
+include = [
+    # "https://raw.githubusercontent.com/gjedlicska/python-styleguide/master/file-structure.toml"
+    "black-style.toml",
+    "coverage-style.toml",
+    "dependencies.toml",
+    "file-structure.toml",
+    "flake8-style.toml",
+    "isort-style.toml",
+    "mypy-style.toml",
+    "nitpick-style.toml",
+    "poetry-style.toml",
+    "pytest-style.toml",
+    "tox-settings.toml",
+]
+
+[nitpick]
+minimum_version = "0.21.0"
+
+
+
+
+
+

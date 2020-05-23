@@ -1,0 +1,13 @@
+["pyproject.toml".tool.poetry.dev-dependencies]
+tox = "^3.14.6"
+pytest = "^5.2"
+coverage = {version = "^5.0.4", extras = ["toml"]}
+pytest-cov = "^2.8.1"
+coverage2clover = "^2.0.1"
+wemake-python-styleguide = "^0.14.0"
+black = "^19.10b0"
+isort = "^4.3.21"
+flake8 = "^3.7.9"
+pre-commit = "^2.2.0"
+mypy = "^0.770"
+nitpick = "^0.22.2"

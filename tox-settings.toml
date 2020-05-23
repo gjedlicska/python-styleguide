@@ -1,0 +1,65 @@
+[nitpick.files.present]
+"tox.ini" = "Use tox for automations. This helps CI/CD pipelines, they only have to call `tox` to run all automations for the project."
+
+
+# ["tox.ini"."tox:.package"]
+# basepython = "python3"
+
+
+# ["tox.ini".tox]
+# isolated_build = true
+# envlist = "clean, lint, py{37}-testenv, coverage-report, build || clean, lint, py{37}-testenv, coverage-report, build" 
+
+
+# ["tox.ini"."testenv:lint"]
+# skip_install = true
+# deps = "poetry"
+# passenv = "HOMEPATH  # needed on Windows"
+# commands = """
+#     poetry install
+#     pre-commit install
+#     pre-commit run --all-files
+# """
+
+
+# ["tox.ini".testenv]
+# skip_install = true
+# deps = "poetry"
+# commands = """
+#     poetry install
+#     pytest --cov --cov-append --cov-report=term-missing --junitxml=./test_report.xml --cov-branch
+# """
+
+
+# ["tox.ini"."testenv:build"]
+# skip_install = true
+# deps = "poetry"
+# commands = "poetry build --format wheel"
+
+
+# ["tox.ini"."testenv:coverage-report"]
+# skip_install = true
+# deps = """
+#     coverage[toml]
+#     coverage2clover
+# """
+# commands = """
+#     coverage report
+#     coverage xml
+#     coverage2clover -i coverage.xml -o clover.xml
+# """
+
+
+# ["tox.ini"."testenv:clean"]
+# skip_install = true
+# deps = "coverage[toml]"
+# commands = "coverage erase"
+
+
+# ["tox.ini"."testenv:docs"]
+# skip_install = true
+# deps = "poetry"
+# commands = """
+#     poetry insall
+#     sphinx-build -b dirhtml "{toxinidir}/docs/source" "{toxinidir}/docs/build"
+# """

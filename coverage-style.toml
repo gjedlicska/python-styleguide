@@ -1,0 +1,12 @@
+["pyproject.toml".tool.coverage.run]
+parallel = true
+branch = true
+source = ["src"]
+
+
+["pyproject.toml".tool.coverage.paths]
+source = ["src", ".tox/*/site-packages"]
+
+
+["pyproject.toml".tool.coverage.report]
+show_missing = true

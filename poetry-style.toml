@@ -1,0 +1,12 @@
+[nitpick.files.present]
+"pyproject.toml" = "Use 'poetry' to manage project in a PEP417/PEP418 compatible way."
+"poetry.lock" = "The dependecies have to be locked, to have reproducible builds. Run 'poetry lock'."
+
+[nitpick.files.absent]
+"requirements.txt" = "Install poetry, run 'poetry init' to create pyproject.toml, and move dependencies to it"
+"Pipfile" = "Use pyproject.toml instead"
+"Pipfile.lock" = "Use pyproject.toml instead"
+
+["pyproject.toml".build-system]
+requires = ["poetry>=1.0"]
+build-backend = "poetry.masonry.api"

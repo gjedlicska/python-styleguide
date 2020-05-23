@@ -1,0 +1,11 @@
+[nitpick.files."setup.cfg"]
+comma_separated_values = ["flake8.ignore", "flake8.extend-ignore"]
+
+
+["setup.cfg".flake8]
+format="wemake"
+exclude = ".tox, tests/*, docs/*"
+show-source = true
+enable-extensions="G"
+max-line-length = 88
+extend-ignore = "E203, Q000, WPS305, WPS306, WPS412, WPS410, WPS348"
