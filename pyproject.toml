@@ -5,7 +5,7 @@ description = ""
 authors = ["Gergő Jedlicska <gergo@jedlicska.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.6.1"
 
 [tool.poetry.dev-dependencies]
 tox = "^3.15"

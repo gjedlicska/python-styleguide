@@ -1,3 +1,7 @@
+["pyproject.toml".tool.poetry.dependencies]
+python = "^3.6.1"
+
+
 ["pyproject.toml".tool.poetry.dev-dependencies]
 tox = "^3.15"
 pytest = "^5.4"
