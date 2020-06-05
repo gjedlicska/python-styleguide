@@ -18,7 +18,7 @@ black = "^19.10b0"
 isort = "^4.3"
 flake8 = "^3.8"
 pre-commit = "^2.4"
-mypy = "^0.770"
+mypy = "^0.780"
 nitpick = "^0.22"
 
 [build-system]
