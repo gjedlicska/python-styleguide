@@ -4,7 +4,7 @@ comma_separated_values = ["flake8.ignore", "flake8.extend-ignore"]
 
 ["setup.cfg".flake8]
 format="wemake"
-exclude = ".tox, tests/*, docs/*"
+# exclude = ".tox, tests/*, docs/*"
 show-source = true
 enable-extensions="G"
 max-line-length = 88
