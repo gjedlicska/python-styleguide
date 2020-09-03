@@ -1,3 +1,5 @@
-["setup.cfg"."tool:pytest"]
-strict = true
-testpaths = "tests"
+["tox.ini"."pytest"]
+minversion = 6.0
+strict = True
+testpaths = tests
+            src
