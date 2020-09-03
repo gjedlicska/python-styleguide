@@ -1,5 +1,6 @@
-["tox.ini"."pytest"]
-minversion = 6.0
-strict = True
-testpaths = tests
-            src
+["pyproject.toml".tool.pytest.ini_options]
+minversion = "6.0"
+testpaths = [
+    "tests",
+    "src",
+]
